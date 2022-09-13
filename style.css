@@ -1,0 +1,232 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    min-width: 100vw;
+}
+
+li, h2, h3{
+    margin: 0;
+    list-style-type: none;
+}
+
+h2,
+h3{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+h4{
+    font-size: clamp(10px, 1.3rem, 25px);
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.schedule h2{
+    color: #414f6b;
+}
+.btn{
+
+    padding: 0px 10px;
+    color: #b0b4be;
+}
+.btn:hover, .right-nav h4:hover{
+    color: #414f6b;
+    background-color: #b0b4be;
+    text-decoration: underline;
+}
+
+.hero{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 51.6vw;
+    background: url('/images/bg-hero.png') no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+.hero .right-nav, .hero .left-nav{
+    padding: 5px;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4.7vw;
+    background-color: white;
+}
+.section-one p{
+    padding: 0px 4vw;
+}
+.left-nav, .right-nav{
+    justify-content: center;
+    align-items: center;
+}
+.left-nav{
+    display: flex;
+}
+
+.nav-btn{
+    text-align: center;
+    width: 130px;
+}
+
+.section-one{
+    min-height: 44.4vw;
+    background: url('/images/bg-part-1.png') no-repeat;
+    background-size: cover;
+}
+.history{
+    padding: 10px 0px 0px 10px;
+    max-width: 30vw;
+    max-height: 20vw;
+}
+.text-one p{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 10px;
+    margin: 0px;
+}
+.climb{
+    max-width: 30vw;
+    max-height: 30vw;
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 11.7vw;
+    background: url('/images/carousel/bg-carousel.png') no-repeat;
+    background-size: cover;
+}
+.ellipse{
+    margin-top: -10px;
+}
+.ellipse img{
+    max-width: 0.5vw;
+    max-height: 0.5vw;
+}
+
+.carousel-images img{
+    padding: 3px;
+    max-width: 12vw;
+    max-height: 7vw;
+}
+.carousel-images img:hover{
+    transform: scale(1.1);
+    border:#037def solid 3px;
+}
+.carousel-images img:active{
+    transform: scale(1.1);
+    border:#037def solid 3px;
+}
+
+.section-two{
+    background: #fff;
+}
+.text-two{
+    padding: 0px 20px;
+}
+.logo-two{
+    max-width: clamp(50px,1000px,25vw);
+}
+.tab-select{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    min-height: 2.5vw;
+    background: #414f6b;
+
+}
+.tab-button{
+    display: flex;
+    padding: 0px 10px;
+}
+
+.tab-content{
+    min-height: 36.1vw;
+    background: url('/images/tab-one-photo.png') no-repeat;
+    background-size: cover;
+}
+.schedule{
+    display: grid;
+    align-items: center;
+    padding: 10px 20px;
+    width: clamp(200px, 350px, 75vw);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.table-schedule-one{
+    padding-top: 5px;
+}
+.table-schedule-two{
+    display: none;
+}
+.footer{
+    min-height: 4.6vw;
+    background: url('/images/footer.png');
+    background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+    .climb{
+        width: 16.9vw;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .hero,
+    .tab-select,
+    .sticky-nav,
+    .section-one,
+    .section-two{
+        padding: 0px 10vw;
+
+    }
+    .left-nav,.right-nav{
+        display: flex;
+    }
+    .schedule{
+        position: absolute;
+        margin: 6.3vw;
+    }
+    .text-one{
+        display: grid;
+    }
+
+    
+}
+
+@media screen and (min-width: 960px) {
+    .hero,
+    .tab-select,
+    .sticky-nav,
+    .carousel,
+    .section-one,
+    .section-two{
+        padding: 0px 20vw;
+
+    }
+    .text-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-one{
+        padding-top: 10px;
+    }
+    .text-one p{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    }
+    .schedule{
+        position: absolute;
+        margin: 5vw 23vw;
+    }
+}
