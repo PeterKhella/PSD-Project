@@ -17,7 +17,7 @@ mbtn1.addEventListener('click', function onClick(event) {
     mbtn2.removeAttribute("style");
     table1.setAttribute("style", "display:table");
     table2.setAttribute("style", "display:none");
-    tab.style.backgroundImage = "url(/images/tab-one-photo.png)";
+    tab.style.backgroundImage = "url(./images/tab-one-photo.png)";
 
 });
 
@@ -26,7 +26,7 @@ mbtn2.addEventListener('click', function onClick(event) {
     mbtn1.removeAttribute("style");
     table1.setAttribute("style", "display:none");
     table2.setAttribute("style", "display:table");
-    tab.style.backgroundImage = "url(/images/tab-two-photo.png)";
+    tab.style.backgroundImage = "url(./images/tab-two-photo.png)";
 });
 
 

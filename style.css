@@ -45,7 +45,7 @@ h4{
     align-items: flex-start;
     justify-content: space-between;
     min-height: 51.6vw;
-    background: url('/images/bg-hero.png') no-repeat;
+    background: url('./images/bg-hero.png') no-repeat;
     background-size: contain;
     color: #fff;
 }
@@ -80,7 +80,7 @@ h4{
 
 .section-one{
     min-height: 44.4vw;
-    background: url('/images/bg-part-1.png') no-repeat;
+    background: url('./images/bg-part-1.png') no-repeat;
     background-size: cover;
 }
 .history{
@@ -103,7 +103,7 @@ h4{
     align-items: center;
     justify-content: center;
     min-height: 11.7vw;
-    background: url('/images/carousel/bg-carousel.png') no-repeat;
+    background: url('./images/carousel/bg-carousel.png') no-repeat;
     background-size: cover;
 }
 .ellipse{
@@ -152,7 +152,7 @@ h4{
 
 .tab-content{
     min-height: 36.1vw;
-    background: url('/images/tab-one-photo.png') no-repeat;
+    background: url('./images/tab-one-photo.png') no-repeat;
     background-size: cover;
 }
 .schedule{
@@ -170,7 +170,7 @@ h4{
 }
 .footer{
     min-height: 4.6vw;
-    background: url('/images/footer.png');
+    background: url('./images/footer.png');
     background-size: cover;
 }
 
